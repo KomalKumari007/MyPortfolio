@@ -1,0 +1,8 @@
+Project Title: Personal Portfolio & Dynamic Contact Form (FlyRank Intern Project)
+Student: Komal Kumari (komaljha734@gmail.com | +91 7982248129)
+What this project does:
+This project is a fully responsive personal portfolio website built with clean HTML and modern CSS. Beyond showcasing my background and skills as an AI Engineering intern, it features a fully functional, serverless contact form designed to capture user messages seamlessly.
+How it works technically:
+Frontend Structure: Developed using semantic HTML5 and styled with modern CSS variables for a clean, accessible layout.
+Dynamic Form Integration: Utilizes built-in form handling attributes (netlify attribute) allowing the form to securely process submissions without requiring a custom backend server.
+Hosting & Deployment: Hosted via GitHub Pages / Netlify to ensure high availability, fast asset delivery, and an active HTTPS security certificate.
