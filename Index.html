@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Kumari | Portfolio & AI Engineering Intern</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #0ea5e9;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 28pt;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            margin: 0;
+            font-size: 11pt;
+            color: #cbd5e1;
+        }
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px 30px;
+            margin-top: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        h2 {
+            font-size: 14pt;
+            color: var(--primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .btn {
+            display: block;
+            background-color: #f1f5f9;
+            color: var(--primary);
+            text-align: center;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 10pt;
+            border: 1px solid #cbd5e1;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background-color: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-size: 9.5pt;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 10pt;
+            box-sizing: border-box;
+        }
+        button.submit-btn {
+            background-color: var(--accent);
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 10pt;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button.submit-btn:hover {
+            opacity: 0.9;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 10pt;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 9pt;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Komal Kumari</h1>
+            <p>AI Engineering Intern at FlyRank &bull; Backend & General AI Fluency Track</p>
+            <p style="margin-top: 8px; font-size: 9.5pt; color: #38bdf8;">Email: komaljha734@gmail.com | Phone: +91 7982248129</p>
+        </header>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I am an AI Engineering intern specializing in building scalable backend systems, web scrapers, and intelligent personal AI agents. Passionate about leveraging cutting-edge LLMs, automated workflows, and robust software architectures.</p>
+        </div>
+
+        <div class="section">
+            <h2>Current Projects & Capstone</h2>
+            <ul>
+                <li><strong>The Polite Scraper:</strong> Web scraping tool with local caching and polite rate-limiting behavior.</li>
+                <li><strong>Study & Interview Coach Agent:</strong> Custom AI mentor leveraging Socratic questioning and structured technical mock interview loops.</li>
+                <li><strong>Personal Website & Infrastructure:</strong> Deployed live with custom DNS routing and SSL security.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Quick Links & Contact</h2>
+            <div class="links-grid">
+                <a href="mailto:komaljha734@gmail.com" class="btn">Email Me Directly</a>
+                <a href="tel:+917982248129" class="btn">Call: +91 7982248129</a>
+                <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn Profile</a>
+                <a href="https://github.com" target="_blank" class="btn">GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- WORKING DYNAMIC CONTACT FORM -->
+        <div class="section">
+            <h2>Get in Touch (Dynamic Feature)</h2>
+            <p style="font-size: 9.5pt; color: var(--text-light); margin-bottom: 20px;">
+                Send a message through this form. Submissions are securely processed by Netlify and routed to <strong>komaljha734@gmail.com</strong>!
+            </p>
+            
+            <form name="contact" method="POST" netlify data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <footer>
+            &copy; 2026 Komal Kumari &bull; Built for FlyRank Internship Program
+        </footer>
+    </div>
+
+</body>
+                                                </html>
+                                                
